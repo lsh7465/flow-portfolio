@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLOW</title>
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
+
+    <script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body class="no-scroll">
+    <header id="header">
+      <div class="inner-header">
+        <h1 class="logo">
+          <a href="">
+            <svg
+              width="722"
+              height="137"
+              viewBox="0 0 722 137"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M669.162 1.89355H721.999L678.441 134.46H605.341L583.562 58.1394L561.783 134.46H488.682L445.125 1.89355H497.962L525.422 95.4473L554.208 1.89355H612.916L641.702 95.4473L669.162 1.89355Z"
+                fill="black"
+              ></path>
+              <path
+                d="M369.218 136.354C310.889 136.354 285.891 114.196 285.891 67.9874C285.891 21.9681 310.889 0 369.218 0C427.358 0 452.545 22.1575 452.545 67.9874C452.545 114.007 427.358 136.354 369.218 136.354ZM369.218 94.69C398.193 94.69 403.306 82.0016 403.306 67.9874C403.306 54.1627 398.382 41.6636 369.218 41.6636C340.053 41.6636 335.129 53.9733 335.129 67.9874C335.129 82.1909 340.243 94.69 369.218 94.69Z"
+                fill="black"
+              ></path>
+              <path
+                d="M194.989 92.796H282.104V134.46H145.75V1.89355H194.989V92.796Z"
+                fill="black"
+              ></path>
+              <path
+                d="M140.141 43.5572H49.2388V57.7607H128.778V99.4243H49.2388V134.46H0V1.89355H140.141V43.5572Z"
+                fill="black"
+              ></path>
+            </svg>
+          </a>
+        </h1>
+        <div class="service nav-text">(Design/Production)</div>
+        <nav class="link nav">
+          <ul class="styled-list">
+            <li><a href="" class="styled-underline02 nav-text">Work,</a></li>
+            <li>
+              <a href="" class="styled-underline02 nav-text">Services,</a>
+            </li>
+            <li><a href="" class="styled-underline02 nav-text">About</a></li>
+          </ul>
+        </nav>
+        <div class="link styled-underline nav-text">
+          <a href="">Start a project</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="sc-visual">
+      <div class="sticky-wrap">
+        <div class="sticky">
+          <div class="col">
+            <video
+              src="../assets/videos/intro_video.mp4"
+              autoplay
+              muted
+              playsinline
+              loop
+            ></video>
+          </div>
+          <div class="text-wrapper">
+            <div class="col-whitespace"></div>
+            <div class="text-wrap">
+              <div class="slideup description">
+                Shaping Tomorrow's Creative Landscape with Unmatched Craft and
+                Precision.
+              </div>
+              <h4 class="">
+                <span
+                  >Strategic<br />
+                  design partner</span
+                >
+                <span>
+                  + Digital<br />
+                  Production House
+                </span>
+              </h4>
+            </div>
+          </div>
+          <div class="bar bar1"></div>
+          <div class="col">
+            <div class="bar bar2">
+              <div class="number"><span>(01)</span></div>
+            </div>
+          </div>
+          <div class="bar bar3">
+            <div class="logo">
+              <svg
+                width="722"
+                height="137"
+                viewBox="0 0 722 137"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M669.162 1.89355H721.999L678.441 134.46H605.341L583.562 58.1394L561.783 134.46H488.682L445.125 1.89355H497.962L525.422 95.4473L554.208 1.89355H612.916L641.702 95.4473L669.162 1.89355Z"
+                  fill="black"
+                ></path>
+                <path
+                  d="M369.218 136.354C310.889 136.354 285.891 114.196 285.891 67.9874C285.891 21.9681 310.889 0 369.218 0C427.358 0 452.545 22.1575 452.545 67.9874C452.545 114.007 427.358 136.354 369.218 136.354ZM369.218 94.69C398.193 94.69 403.306 82.0016 403.306 67.9874C403.306 54.1627 398.382 41.6636 369.218 41.6636C340.053 41.6636 335.129 53.9733 335.129 67.9874C335.129 82.1909 340.243 94.69 369.218 94.69Z"
+                  fill="black"
+                ></path>
+                <path
+                  d="M194.989 92.796H282.104V134.46H145.75V1.89355H194.989V92.796Z"
+                  fill="black"
+                ></path>
+                <path
+                  d="M140.141 43.5572H49.2388V57.7607H128.778V99.4243H49.2388V134.46H0V1.89355H140.141V43.5572Z"
+                  fill="black"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sc-overview">
+      <div class="inner">
+        <div class="title-image-group">
+          <div class="title-wrap">
+            <div data-motion="slideup" class="text-lines">
+              Little Black Book Mobile App & Branding
+            </div>
+          </div>
+          <!-- <span>Little Black Book </span>
+            <span>Mobile App & Branding </span> -->
+          <div class="img-wrap slideup-img styled-img-hover">
+            <a href="" class="styled-img-click">
+              <img src="../assets/images/intro_img.jpg" alt="" />
+              <span class="styled-img-cursor">(view)</span>
+            </a>
+          </div>
+        </div>
+        <div class="intro-description">
+          <div data-motion="slideup" class="text-lines">
+            <span class="spacer"></span>
+            Challenging the status quo with audacious creativity and unwavering
+            dedication. We don't settle for ordinary; instead, we embark on a
+            journey of innovation, meticulously crafting each project into a
+            masterpiece.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sc-approach">
+      <div class="inner">
+        <div class="row">
+          <h2 class="title">Flow is a 360 digital production house</h2>
+          <div class="whitespace"></div>
+          <div class="group-desc">
+            <div class="desc-wrap">
+              <p class="description">
+                We're all about taking a 360-degree approach, bringing all our
+                services under the same umbrella to create communication that is
+                really creative and actually gets results.
+              </p>
+              <p class="description">
+                At Flow, we're all about giving your brand the attention it
+                deserves. We're not afraid to shake things up and try new
+                things, and we're all about empowering everyone to speak their
+                mind and share their ideas.
+              </p>
+            </div>
+            <div class="link styled-underline">
+              <a href="">More about our approach</a>
+            </div>
+          </div>
+          <div class="number">(02)</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sc-work">
+      <div class="sticky">
+        <div class="col work-info">
+          <div class="title-wrap">
+            <h3>
+              <div class="box">
+                <span>1</span>
+                <span>2</span>
+              </div>
+            </h3>
+            <div class="title-line">
+              <div>
+                <div class="box">
+                  <span>Pass</span>
+                  <span>Samsung</span>
+                </div>
+              </div>
+              <div>
+                <div class="box">
+                  <span>The Baton</span>
+                  <span>Emirates</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media-wrap">
+            <div class="content-line">
+              <div>
+                <div class="box">
+                  <span>Digital Platform</span>
+                  <span>Direction</span>
+                </div>
+              </div>
+              <div>
+                <div class="box">
+                  <span>/Rebrand</span>
+                  <span>/Production</span>
+                </div>
+              </div>
+            </div>
+            <div class="grid video-line">
+              <div class="item grid">
+                <video
+                  src="./assets/videos/work_video_01.mp4"
+                  autoplay
+                  muted
+                  playsinline
+                  loop
+                ></video>
+              </div>
+              <div class="item grid">
+                <video
+                  src="./assets/videos/work_video_02.mp4"
+                  autoplay
+                  muted
+                  playsinline
+                  loop
+                ></video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col grid">
+          <div class="item">
+            <span class="cursor"
+              >Pass The Baton<br />
+              (View)</span
+            >
+            <img src="../assets/images/work_img_01.jpg" alt="" />
+          </div>
+          <div class="item">
+            <span class="cursor"
+              >Samsung<br />
+              (View)</span
+            >
+            <img src="../assets/images/work_img_02.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sc-home-service">
+      <div class="inner">
+        <div class="row">
+          <div class="title-area">
+            <h2 class="title">
+              Build more trust combining the craft of design and the excellence
+              of production
+            </h2>
+            <div class="link styled-underline">
+              <a href="">More about our services</a>
+            </div>
+          </div>
+          <div class="media-area">
+            <div class="img-wrap styled-img-hover slideup-img">
+              <a href="" class="styled-img-click">
+                <img src="../assets/images/service_img.jpg" alt="" />
+                <span class="styled-img-cursor">(view)</span>
+              </a>
+            </div>
+            <div class="text-wrap">
+              <p>CEO.com Social Platform Design &</p>
+              <p>Development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sc-home-title">
+      <div class="inner">
+        <div class="text-area">
+          <div class="text-inner">
+            <div class="text">Digital</div>
+            <div class="number">(A)</div>
+          </div>
+          <div class="text-inner">
+            <div class="text">Branding</div>
+            <div class="number">(B)</div>
+          </div>
+          <div class="text-inner">
+            <div class="text">Production</div>
+            <div class="number">(C)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sc-home-about">
+      <div class="inner">
+        <div class="row">
+          <div class="media-area">
+            <div class="text-wrap">Ronaldo & Adam @GDC San Francisco 2022</div>
+            <div class="img-wrap styled-img-hover">
+              <a href="" class="styled-img-click">
+                <img src="../assets/images/about_img.jpg" alt="" />
+                <span class="styled-img-cursor">(About us)</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="text-area">
+            <div class="about-us">(About us)</div>
+            <div class="text-wrap">
+              <div class="slideup text">
+                <div class="spacer"></div>
+                We're a creative production studio fueled by passion and
+                innovation.
+              </div>
+              <div class="slideup">
+                Our mission is to revolutionize creative work for companies with
+                style and substance.
+              </div>
+            </div>
+            <div class="link styled-underline">
+              <a href="">Learn more about us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sc-work-together">
+      <div class="inner">
+        <div class="row">
+          <a class="logo">
+            <svg
+              width="722"
+              height="137"
+              viewBox="0 0 722 137"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M669.162 1.89355H721.999L678.441 134.46H605.341L583.562 58.1394L561.783 134.46H488.682L445.125 1.89355H497.962L525.422 95.4473L554.208 1.89355H612.916L641.702 95.4473L669.162 1.89355Z"
+                fill="black"
+              ></path>
+              <path
+                d="M369.218 136.354C310.889 136.354 285.891 114.196 285.891 67.9874C285.891 21.9681 310.889 0 369.218 0C427.358 0 452.545 22.1575 452.545 67.9874C452.545 114.007 427.358 136.354 369.218 136.354ZM369.218 94.69C398.193 94.69 403.306 82.0016 403.306 67.9874C403.306 54.1627 398.382 41.6636 369.218 41.6636C340.053 41.6636 335.129 53.9733 335.129 67.9874C335.129 82.1909 340.243 94.69 369.218 94.69Z"
+                fill="black"
+              ></path>
+              <path
+                d="M194.989 92.796H282.104V134.46H145.75V1.89355H194.989V92.796Z"
+                fill="black"
+              ></path>
+              <path
+                d="M140.141 43.5572H49.2388V57.7607H128.778V99.4243H49.2388V134.46H0V1.89355H140.141V43.5572Z"
+                fill="black"
+              ></path>
+            </svg>
+          </a>
+          <div class="whitespace"></div>
+          <div class="text-area">
+            <p class="text">Ready to Rock?</p>
+            <div class="link styled-underline">
+              <a href="">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="inner">
+        <div class="top">
+          <!-- Navigation Section -->
+          <section class="list-wrap">
+            <h3 class="title"><span class="text">(Navigate)</span></h3>
+            <ul class="menu-list">
+              <li>
+                <a href="#" class="styled-underline02"
+                  ><span class="text">Home</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="styled-underline02"
+                  ><span class="text">Work</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="styled-underline02"
+                  ><span class="text">Services</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="styled-underline02"
+                  ><span class="text">About</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="styled-underline02"
+                  ><span class="text">Contact</span></a
+                >
+              </li>
+            </ul>
+          </section>
+
+          <!-- Connect Section -->
+          <section class="list-wrap">
+            <h3 class="title"><span class="text">(Connect)</span></h3>
+            <ul class="menu-list">
+              <li>
+                <a href="#" class="styled-underline02"
+                  ><span class="text">Instagram</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="styled-underline02"
+                  ><span class="text">LinkedIn</span></a
+                >
+              </li>
+            </ul>
+          </section>
+
+          <!-- Visit Us Section -->
+          <section class="list-wrap">
+            <h3 class="title"><span class="text">(Visit us)</span></h3>
+            <ul class="menu-list">
+              <li><span class="text">Miami, USA</span></li>
+              <li><span class="text">Salt Lake, USA</span></li>
+              <li><span class="text">São Paulo, Brazil</span></li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="bottom">
+          <div class="copyright">All rights reserved©Flow 2025</div>
+
+          <ul class="legal-list">
+            <li class="legal-item styled-underline02">
+              <a href="" class="">Privacy Policy</a>
+            </li>
+
+            <span class="slash" aria-hidden="true">/</span>
+
+            <li class="legal-item styled-underline02">
+              <a href="" class="">Terms</a>
+            </li>
+          </ul>
+
+          <div class="tool-wrap">
+            <button class="btn-top styled-underline02">
+              <span class="">Back to top </span>
+              <svg
+                class="ic-top"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 19L19.5 12L13 5"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                ></path>
+                <path
+                  d="M19 12H3"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                ></path>
+              </svg>
+            </button>
+            <div class="">
+              <button
+                class="btn-bg-decorating styled-underline02"
+                aria-label="Background decorating"
+              >
+                Shift + G
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
