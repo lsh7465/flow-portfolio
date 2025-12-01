@@ -698,6 +698,7 @@ footerBottomTl.to(
   0,
 );
 
+
 // 맨 위로 스크롤
 const scrollToTopBtn = document.querySelector(".btn-top");
 if (scrollToTopBtn) {
