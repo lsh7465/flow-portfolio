@@ -54,7 +54,7 @@ new SplitType(".sc-visual .logo path", { types: "chars" });
 gsap.set("#header .styled-list .nav-text, #header .styled-underline", {
   y: -100,
 });
-gsap.set(".sc-visual h4 span", { y: 50, opacity: 0 });
+gsap.set(".sc-visual .tagline span", { y: 50, opacity: 0 });
 gsap.set(".sc-visual .logo path", { y: 100, clipPath: "inset(0% 0% 100% 0%)" });
 
 const introMotion = gsap.timeline({
@@ -134,7 +134,7 @@ introMotion
     "a+=0.6",
   )
   .to(
-    ".sc-visual h4 span",
+    ".sc-visual .tagline span",
     {
       y: 0,
       opacity: 1,

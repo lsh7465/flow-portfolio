@@ -101,7 +101,7 @@
   margin: -0.1em -0.1em;
   overflow: hidden;
 }
-.sc-visual .text-wrap h4 {
+.sc-visual .text-wrap .tagline {
   padding-top: 60px;
   display: flex;
   gap: 60px;
@@ -298,7 +298,8 @@
 .sc-work .work-info {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  justify-content: space-between;
+  /* gap: 80px; */
   padding: 170px 20px 20px;
 }
 .sc-work .title-wrap {
