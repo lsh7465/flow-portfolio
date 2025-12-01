@@ -450,6 +450,8 @@
 
 .sc-home-about {
   padding: 100px 0 150px;
+  position: relative;
+  background-color: #fff;
 }
 .sc-home-about .row {
   display: grid;
